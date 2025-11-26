@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <div className="bg-gradient-to-br from-blue-100 via-yellow-50 to-red-100 min-h-screen">
+        <div className="bg-linear-to-br from-blue-100 via-yellow-50 to-red-100 min-h-screen">
 
             {/* Hero Section */}
             <header className="text-center py-20 px-6">
