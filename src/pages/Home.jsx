@@ -1,97 +1,98 @@
 export default function Home() {
     return (
-        <div className="bg-linear-to-br from-blue-200 via-yellow-100 to-red-200 min-h-screen">
+        <div className="bg-gradient-to-br from-blue-100 via-yellow-50 to-red-100 min-h-screen">
 
-            {/* Header Section */}
-            <header className="text-center py-12">
-                <h1 className="text-5xl font-extrabold text-blue-700 drop-shadow-lg">
+            {/* Hero Section */}
+            <header className="text-center py-20 px-6">
+                <h1 className="text-6xl font-extrabold text-blue-700 drop-shadow">
                     مين ناويها؟
                 </h1>
-                <p className="mt-4 text-xl text-gray-700 font-semibold">
+                <p className="mt-4 text-2xl text-gray-700 font-semibold">
                     خليك معانا في التنظيم!
                 </p>
-            </header>
 
-            {/* Description */}
-            <section className="text-center px-6 max-w-2xl mx-auto mb-12">
-                <p className="text-lg text-gray-800 leading-relaxed">
-                    منصة شبابية لتنظيم النشاطات الجماعية مثل الرحلات، لعب الكورة،
-                    المذاكرة الجماعية، والفعاليات الترفيهية.
-                    <span className="text-blue-600 font-semibold"> كل دا بسهولة وأمان! </span>
+                <p className="mt-6 max-w-2xl mx-auto text-lg leading-relaxed text-gray-800">
+                    منصة شبابية لتنظيم النشاطات الجماعية مثل الرحلات، لعب الكورة، المذاكرة الجماعية،
+                    والفعاليات الترفيهية.
+                    <span className="text-blue-600 font-bold"> كل دا بسهولة وأمان! </span>
                 </p>
 
-                <div className="flex justify-center gap-4 mt-6">
+                <div className="flex justify-center gap-6 mt-8">
                     <a href="/register"
-                        className="px-6 py-3 bg-blue-600 text-white text-lg rounded-xl shadow-lg hover:bg-blue-700 duration-200">
+                        className="px-8 py-3 bg-blue-600 text-white text-lg rounded-xl shadow-md hover:bg-blue-700 duration-200">
                         اشترك الآن
                     </a>
 
                     <a href="/events"
-                        className="px-6 py-3 bg-yellow-400 text-black text-lg rounded-xl shadow-lg hover:bg-yellow-500 duration-200">
+                        className="px-8 py-3 bg-yellow-400 text-black text-lg rounded-xl shadow-md hover:bg-yellow-500 duration-200">
                         اكتشف النشاطات
                     </a>
                 </div>
-            </section>
+            </header>
 
             {/* Features */}
-            <section className="px-8 max-w-5xl mx-auto mb-20">
-                <h2 className="text-3xl font-bold text-center text-gray-700 mb-10">
+            <section className="px-8 max-w-6xl mx-auto py-16">
+                <h2 className="text-4xl font-bold text-center text-gray-800 mb-14">
                     ليه تختار "مين ناويها"؟
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-                    <div className="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-blue-500">
-                        <h3 className="text-xl font-semibold mb-3">سهولة الاستخدام</h3>
-                        <p className="text-gray-600">واجهة بسيطة تخليك تنضم أو تنشئ نشاط بثواني.</p>
+                    <div className="bg-white p-8 rounded-3xl shadow-lg text-center hover:shadow-2xl duration-300 border-t-4 border-blue-500">
+                        <h3 className="text-2xl font-bold mb-3">سهولة الاستخدام</h3>
+                        <p className="text-gray-600 text-lg">واجهة بسيطة تخليك تنضم أو تنشئ نشاط بثواني.</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-green-500">
-                        <h3 className="text-xl font-semibold mb-3">أمان</h3>
-                        <p className="text-gray-600">نظام تسجيل موثوق لضمان سلامة المشاركين.</p>
+                    <div className="bg-white p-8 rounded-3xl shadow-lg text-center hover:shadow-2xl duration-300 border-t-4 border-green-500">
+                        <h3 className="text-2xl font-bold mb-3">أمان</h3>
+                        <p className="text-gray-600 text-lg">نظام تسجيل موثوق لضمان سلامة المشاركين.</p>
                     </div>
 
-                    <div className="bg-white p-6 rounded-2xl shadow-xl text-center border-t-4 border-yellow-500">
-                        <h3 className="text-xl font-semibold mb-3">تواصل سهل</h3>
-                        <p className="text-gray-600">تواصل مباشر بين أعضاء كل فعالية.</p>
+                    <div className="bg-white p-8 rounded-3xl shadow-lg text-center hover:shadow-2xl duration-300 border-t-4 border-yellow-500">
+                        <h3 className="text-2xl font-bold mb-3">تواصل سهل</h3>
+                        <p className="text-gray-600 text-lg">تواصل مباشر بين أعضاء كل فعالية.</p>
                     </div>
 
                 </div>
             </section>
 
             {/* Testimonials */}
-            <section className="bg-white py-12">
-                <h2 className="text-3xl font-bold text-center text-gray-700 mb-8">آراء المستخدمين</h2>
+            <section className="bg-white py-16">
+                <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
+                    آراء المستخدمين
+                </h2>
 
-                <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
 
-                    <div className="bg-yellow-50 p-5 rounded-xl shadow-md">
-                        <p className="text-gray-700">“منصة ممتازة! سهلت عليّ تنظيم خروجة مع صحابي.”</p>
-                        <span className="block mt-3 font-semibold">— أحمد</span>
+                    <div className="bg-yellow-50 p-7 rounded-2xl shadow-md hover:shadow-xl duration-300">
+                        <p className="text-gray-700 text-lg">“منصة ممتازة! سهلت عليّ تنظيم خروجة مع صحابي.”</p>
+                        <span className="block mt-4 font-bold text-gray-800">— أحمد</span>
                     </div>
 
-                    <div className="bg-blue-50 p-5 rounded-xl shadow-md">
-                        <p className="text-gray-700">“شاركت في كذا فعالية وكانت التجارب لطيفة جدًا.”</p>
-                        <span className="block mt-3 font-semibold">— مريم</span>
+                    <div className="bg-blue-50 p-7 rounded-2xl shadow-md hover:shadow-xl duration-300">
+                        <p className="text-gray-700 text-lg">“شاركت في كذا فعالية وكانت التجارب لطيفة جدًا.”</p>
+                        <span className="block mt-4 font-bold text-gray-800">— مريم</span>
                     </div>
 
-                    <div className="bg-red-50 p-5 rounded-xl shadow-md">
-                        <p className="text-gray-700">“أكتر حاجة عجبتني التواصل السهل بين الأعضاء.”</p>
-                        <span className="block mt-3 font-semibold">— سامح</span>
+                    <div className="bg-red-50 p-7 rounded-2xl shadow-md hover:shadow-xl duration-300">
+                        <p className="text-gray-700 text-lg">“أكتر حاجة عجبتني التواصل السهل بين الأعضاء.”</p>
+                        <span className="block mt-4 font-bold text-gray-800">— سامح</span>
                     </div>
 
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="text-center mt-12 text-gray-600 text-sm py-8">
-                تابعنا على:
-                <div className="flex justify-center gap-6 mt-3">
+            <footer className="text-center mt-12 text-gray-700 text-md py-10">
+                <p className="font-semibold">تابعنا على:</p>
+
+                <div className="flex justify-center gap-6 mt-4">
                     <a href="#" className="text-blue-600 font-bold">Facebook</a>
                     <a href="#" className="text-pink-600 font-bold">Instagram</a>
                     <a href="#" className="text-gray-800 font-bold">Twitter</a>
                 </div>
-                <p className="mt-6">© 2025 مين ناويها؟ — كل الحقوق محفوظة</p>
+
+                <p className="mt-8">© 2025 مين ناويها؟ — كل الحقوق محفوظة</p>
             </footer>
         </div>
     );
