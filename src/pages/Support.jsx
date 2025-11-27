@@ -1,17 +1,36 @@
 export default function Support() {
     return (
-        <div className="min-h-screen p-10 bg-gray-100">
-            <h1 className="text-3xl font-bold text-center mb-8">الدعم الفني</h1>
+        <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-blue-100 via-yellow-100 to-red-100 p-6">
 
-            <form className="bg-white max-w-xl mx-auto p-6 rounded-xl shadow-lg">
-                <input type="text" placeholder="اسمك" className="w-full mb-4 p-3 border rounded" />
-                <input type="email" placeholder="إيميلك" className="w-full mb-4 p-3 border rounded" />
-                <textarea placeholder="رسالتك" className="w-full mb-4 p-3 border rounded h-32"></textarea>
+            <div className="bg-white max-w-xl w-full p-8 rounded-2xl shadow-xl">
+                <h1 className="text-3xl font-bold text-center text-blue-700 mb-8">
+                    الدعم الفني
+                </h1>
 
-                <button className="w-full bg-blue-600 text-white py-3 rounded">
-                    إرسال
-                </button>
-            </form>
+                <form className="flex flex-col gap-4">
+                    <input
+                        type="text"
+                        placeholder="اسمك"
+                        className="w-full p-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-400 outline-none"
+                    />
+
+                    <input
+                        type="email"
+                        placeholder="إيميلك"
+                        className="w-full p-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-400 outline-none"
+                    />
+
+                    <textarea
+                        placeholder="رسالتك"
+                        className="w-full p-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-400 outline-none h-32 resize-none"
+                    ></textarea>
+
+                    <button className="w-full bg-blue-600 text-white py-3 rounded-xl text-lg font-semibold hover:bg-blue-700 duration-200 shadow-md">
+                        إرسال
+                    </button>
+                </form>
+            </div>
+
         </div>
     );
 }

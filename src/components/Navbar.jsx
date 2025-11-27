@@ -6,7 +6,7 @@ export default function Navbar() {
 
     return (
         <nav className="bg-white shadow-md sticky top-0 z-50">
-            <div className="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
+            <div className="mx-5 px-5 py-4 flex justify-between items-center">
 
                 {/* Logo */}
                 <Link to="/" className="text-2xl font-extrabold text-blue-700">
@@ -29,12 +29,21 @@ export default function Navbar() {
                 </div>
 
                 {/* Desktop CTA */}
-                <Link
-                    to="/register"
-                    className="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-xl hover:bg-blue-700 duration-200 shadow"
-                >
-                    اشترك الآن
-                </Link>
+                <div className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
+                    <Link
+                        to="/register"
+                        className="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-xl hover:bg-blue-700 duration-200 shadow"
+                    >
+                        اشترك الآن
+                    </Link>
+
+                    <Link
+                        to="/login"
+                        className="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-xl hover:bg-blue-700 duration-200 shadow"
+                    >
+                        تسجيل الدخول
+                    </Link>
+                </div>
 
                 {/* Mobile Menu Button */}
                 <button
@@ -79,6 +88,14 @@ export default function Navbar() {
                         className="block mt-3 bg-blue-600 text-white px-5 py-3 rounded-xl text-center hover:bg-blue-700 duration-200 shadow"
                     >
                         اشترك الآن
+                    </Link>
+                    
+                    <Link
+                        to="/login"
+                        onClick={() => setIsOpen(false)}
+                        className="block mt-3 bg-blue-600 text-white px-5 py-3 rounded-xl text-center hover:bg-blue-700 duration-200 shadow"
+                    >
+                        تسجيل الدخول
                     </Link>
                 </div>
             )}

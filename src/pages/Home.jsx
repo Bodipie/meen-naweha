@@ -14,7 +14,7 @@ export default function Home() {
                 <p className="mt-6 max-w-2xl mx-auto text-lg leading-relaxed text-gray-800">
                     منصة شبابية لتنظيم النشاطات الجماعية مثل الرحلات، لعب الكورة، المذاكرة الجماعية،
                     والفعاليات الترفيهية.
-                    <span className="text-blue-600 font-bold"> كل دا بسهولة وأمان! </span>
+                    <span className="text-blue-600 font-bold"> كل دا بسهولة وأمان </span>
                 </p>
 
                 <div className="flex justify-center gap-6 mt-8">
