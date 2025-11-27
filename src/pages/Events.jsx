@@ -3,13 +3,22 @@ export default function Events() {
         { name: "ماتش كورة", date: "الجمعة", place: "النادي الأهلي" },
         { name: "مذاكرة جماعية", date: "السبت", place: "مكتبة مصر" },
         { name: "خروجة حديقة", date: "الأحد", place: "حديقة الأزهر" },
+        { name: "تمرين جيم جماعي", date: "الإثنين", place: "جولدز جيم - مدينة نصر" },
+        { name: "سهرة بلايستيشن", date: "الثلاثاء", place: "كافي نت - التجمع الخامس" },
+        { name: "جري صباحي", date: "الأربعاء", place: "حديقة الطفل - مصر الجديدة" },
+        { name: "رحلة بحر", date: "الخميس", place: "شاطئ الإسكندرية" },
+        { name: "ورشة تعلم رسم", date: "الجمعة", place: "مركز الإبداع - وسط البلد" },
+        { name: "لعب شطرنج", date: "السبت", place: "مكتبة القاهرة الكبرى" },
+        { name: "تنزه وتسلق بسيط", date: "الأحد", place: "المقطم - الهضبة" },
+        { name: "سهرة مشاهدة أفلام", date: "الجمعة", place: "بيت أحد الأعضاء" },
+        { name: "ورشة برمجة مبتدئين", date: "الأربعاء", place: "Coworking Space - الدقي" },
     ];
 
     return (
         <div
             className="
                 min-h-screen p-10 
-                bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100
+                bg-linear-to-br from-blue-100 via-purple-100 to-pink-100
                 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]
             "
         >
